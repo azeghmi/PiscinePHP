@@ -1,10 +1,9 @@
 # PiscinePHP
 
-PiscinePHP 124/100
+PiscinePHP 88/100
 2 weeks of initiation to web technologies: HTML, CSS, PHP, SQL, OOP, JS, jQuery, AJAX...
 
-Projects
-Days
+Projects Days
 10 days to learn previously mentioned notions.
 
 Project	Grade
@@ -16,6 +15,7 @@ Project	Grade
 	Day05	35
 	Day07	100
 	Day09	100
+
 Rush00
 2 days to create an e-commerce website (front & back), with client accounts, shopping carts and a checkout system.
 
