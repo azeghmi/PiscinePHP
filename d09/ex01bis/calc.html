@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<input id="left" type="text">
+	<select name="op" id="op-select">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input id="right" type="text">
+	<input type="submit" value="Try me!" onclick="calculate()">
+	<script type="text/javascript">
+		setInterval(function(){ alert("Please, use me..."); }, 30000);
+		function calculate(gauche, op, droite){
+			var gauche = $("#left");
+			var op = $("#op-select");
+			var droite = $("#right");
+
+			var left = parseInt(gauche.val());
+			var right = parseInt(droite.val());
+			var result = 0;
+			if ((op.val() == "/" || op.val() == "%") && right == 0){
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+			}
+			else if (!isNaN(left) && !isNaN(right) && left >= 0 && right >= 0){
+				if (op.val() == "+"){
+					result = left + right;
+					console.log(result);
+					alert(result);
+				}
+				else if (op.val() == "-"){
+					result = left - right;
+					console.log(result);
+					alert(result);
+				}
+				else if (op.val() == "*"){
+					result = left * right;
+					console.log(result);
+					alert(result);
+				}
+				else if (op.val() == "/"){
+					result = left / right;
+					console.log(result);
+					alert(result);
+				}
+				else if (op.val() == "%"){
+					result = left % right;
+					console.log(result);
+					alert(result);
+				}
+			}
+			else
+				alert("Error :(");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: azeghmi <marvin@42.fr>                     +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2019/10/14 15:15:43 by azeghmi           #+#    #+#            -->
+<!-- Updated: 2019/10/14 15:15:45 by azeghmi          ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="doft.css">
+		<title>Day of the 42</title>
+	</head>
+
+	<body>
+		<header>
+			<img src="resources/day_of_the_42.png" title="logo" alt="42 logo" id="logo">
+			<img src="resources/loupe.png" title="loupe" alt="loupe" id="loupe">
+			<a href="http://www.disney.com"><img id="disney" src="resources/reload.png" alt="Recommencer au début" title="Recommencer au début" id="disney"></a>
+            <a href="http://www.relaischateaux.com"><img id="relais" src="resources/close.gif" alt="Déconnecter" title="Déconnecter" id="relais"></a>
+		</header>
+		<nav id="left">
+			<img src="resources/arrow.png" id="fleche" alt="Avancer" title="Avancer" class="infobulle">
+			<img src="resources/main.png" id="main" alt="Prendre" title="Prendre" class="infobulle">
+			<img src="resources/oeil.png" id="oeil" alt="Regarder" title="Regarder" class="infobulle">
+			<img src="resources/outil.png" id="outil" alt="Utiliser" title="Utiliser" class="infobulle">
+			<img src="resources/chat-icon.png" id="chat" alt="Parler" title="Parler" class="infobulle">
+			<div class="carre" style="cursor:help;" alt="Regarder" title="Regarder"></div>
+		</nav>
+		<div class="middle">
+			<div class="img_central">
+				<img src="resources/cluster.jpg" usemap="#image-map" alt="picture of a 42's cluster" title="cluster">	
+			</div>
+			<map name="image-map" id="panneaux">
+            	<area shape="circle" target="_blank" alt="Ikea" title="Ikea" href="http://www.ikea.com/" coords="381,419,138" />
+                <area shape="circle" target="_blank" alt="Apple" title="Apple" href="https://www.apple.com/" coords="895,415,136" />
+            </map>
+		</div>
+		<nav id="right">
+			<img id="book" src="resources/book.png" alt="book", title="book" class="infobulle"/>
+            <img id="towel" src="resources/towel.png" alt="towel" title="towel" class="infobulle"/>
+            <div class="wall infobulle" title="wall"></div>
+		</nav>
+		<footer>
+        	<div class="form" title="form">
+            	<p>Vous <span class="big">entrez</span> alors dans une grande piece remplie<br /> d'<span class="shadow">ordinateurs</span>...<br /></p>
+            	<span class="italic">- Bonjour, vous êtes nouveau ici ?</span>
+            	<form>
+                	<input type="text" id="formulaire">
+                	<input type="submit" value="Repondre" id="repondre">
+            	</form>
+        	</div>
+    	</footer>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>balloon</title>
+		<style type="text/css">
+			#cercle 
+			{
+	    		width: 200px;
+	    		height: 200px;
+	    		border-radius: 50%;
+	    		background: red;
+			}
+			.container 
+			{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="cercle" onclick="increase()" onmouseleave="decrease()"  ></div>
+		</div>
+		<script type="text/javascript">
+			var cercle = document.getElementById("cercle");
+			var i = 0;
+			function increase() {
+				var currWidth = cercle.offsetWidth;
+				var currHeight = cercle.offsetHeight;
+  				cercle.style.width = (currWidth + 10) + "px";
+  				cercle.style.height = (currHeight + 10) + "px";
+  				if (cercle.offsetHeight > 420 || cercle.offsetWidth > 420){
+         			cercle.style.width = "200px";
+          			cercle.style.height = "200px";
+        		}
+        		if (i == 0)
+        			cercle.style.background = "red";
+        		if (i == 1)
+        			cercle.style.background = "green";
+        		if (i == 2)
+        			cercle.style.background = "blue";
+        		i++;
+        		if (i > 2)
+        			i = 0;
+			}
+			function decrease() {
+				var currWidth = cercle.offsetWidth;
+				var currHeight = cercle.offsetHeight;
+  				cercle.style.width = (currWidth - 5) + "px";
+  				cercle.style.height = (currHeight - 5) + "px";
+  				if (cercle.offsetHeight < 200){
+        	 		cercle.style.width = "200px";
+        	  		cercle.style.height = "200px";
+				}
+				if (i == 0)
+        			cercle.style.background = "blue";
+        		if (i == 1)
+        			cercle.style.background = "green";
+        		if (i == 2)
+        			cercle.style.background = "red";
+        		i++;
+        		if (i > 2)
+        			i = 0;
+			}
+		</script>
+	</body>
+</html>

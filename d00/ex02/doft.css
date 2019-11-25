@@ -1,0 +1,236 @@
+
+html, body
+{
+  width:100%;
+  height:100%;
+  margin:auto;
+  background-color: rgb(80, 80, 80);
+}
+body, header
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing:border-box;
+}
+header
+{
+	background-color: rgb(144, 144, 144);
+	width: 1420px;
+	height: 114px;
+	position: absolute;
+	top: 15px;
+	left: 232px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 3px black;
+}
+img#logo
+{
+	padding-top: 10px;
+	left: 10px;
+	width : 350px; 
+	height: 94px;
+}
+img#loupe
+{
+	float: right;
+	width: 245px;
+	height: 100px;
+	padding-top: 31px;
+	padding-right: 30px;
+}
+.img_central img 
+{
+	border: 10px solid grey;
+	box-shadow: 12px 12px 12px 1px rgb(0,0, 0);
+	border-radius: 10px;
+}
+.img_central
+{
+	padding-left: 430px;
+    padding-top: 173px;
+}
+
+#disney 
+{
+	width: 20px;
+	position: absolute;
+	top: 9px;
+	left: 1389px;
+}
+#relais 
+{
+	position: absolute;
+	top: 91px;
+	left: 1391px;
+}
+#left
+{
+	background-color: rgb(144, 144, 144);
+	position: absolute;
+	width: 140px;
+	height: 425px;
+	top: 173px;
+	left: 262px;
+	box-shadow: 10px 10px 3px black;
+	border-radius: 10px;
+}
+img#fleche
+{
+	width: 70px;
+	padding-left: 37px;
+	padding-top: 20px;
+}
+img#main
+{
+	width: 70px;
+	padding-left: 37px;
+}
+img#oeil
+{
+	width: 70px;
+	padding-left: 37px;
+	padding-top: 10px;
+}
+img#outil
+{
+	width: 70px;
+	padding-left: 37px;
+	padding-top: 10px;
+}
+img#chat
+{
+	width: 70px;
+	padding-left: 37px;
+	padding-top: 10px;	
+}
+#middle 
+{
+    position: absolute;
+    width: 1021px;
+    height: 582px;
+    top: 173px;
+    left: 432px;
+    box-shadow: 10px 10px 3px black;
+    border-radius: 10px;
+}
+#cluster 
+{
+    padding-left: 441px;
+    padding-top: 175px;
+}
+#right 
+{
+   	background-color: rgb(144, 144, 144);
+	position: absolute;
+	width: 140px;
+	height: 425px;
+	top: 173px;
+	left: 1503px;
+	box-shadow: 10px 10px 3px black;
+	border-radius: 10px;
+}
+#book
+{
+	width: 95px;
+    padding-left: 28px;
+    padding-top: 19px;
+}
+#towel
+{
+	width: 76px;
+    padding-left: 36px;
+}
+.wall
+{
+    background: url("resources/brick.jpg");
+    position: relative;
+    left: 10px;
+    background-size: 27%;
+    width: 120px;
+    height: 70px;
+}
+footer
+{
+   position: relative;
+    width: 460px;
+    height: 162px;
+    bottom: 147px;
+    left: 187px;
+    box-shadow: 10px 10px 3px black;
+    border-radius: 10px;
+    background-color: rgb(140, 253, 142);
+}
+.carre
+{
+	position: absolute;
+    border: 6px solid red;
+    bottom: 177px;
+    left: 30px;
+    padding-left: 70px;
+    padding-top: 62px;
+}
+.form {
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+	border-radius: 10px;
+	padding:1%;
+	padding-bottom: 6%;
+}
+p
+{
+	font-size: 1em;
+    margin: 0px 0px -3px 4px;
+    margin-bottom: -5px;
+	font-family: Verdana;
+}
+.big
+{
+    font-size: 2.2em;
+    font-family: Georgia;
+}
+.shadow
+{
+
+    text-shadow: 6px 4px 3px red;
+}
+.italic
+{
+    font-style: italic;
+    margin-left: 0.2em;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#repondre
+{
+	background-color: rgb(214, 214, 214);
+	border-color: rgb(80, 80, 80);
+	border: 1px solid;
+	border-style:none;
+	display:inline-block;
+	width:78px;
+	font-size: 0.9em;
+	margin-left: 5px;
+}
+#formulaire
+{
+	width: 374px;
+	display: inline-block;
+	margin-left: 7px;
+}
+.infobulle 
+{
+    position: relative;
+    cursor:help;
+}
+.infobulle:hover::after,
+.infobulle:focus::after {
+	content: attr(aria-label);
+	position: absolute;
+	top: -2.4em;
+	left: 50%;
+	transform: translateX(-50%); 
+	z-index: 1; 
+	white-space: nowrap;
+}

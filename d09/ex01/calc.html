@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc</title>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<input id="left" type="text">
+	<select name="op" id="op-select">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option>
+	</select>
+	<input id="right" type="text">
+	<input type="submit" value="Try me!" onclick="calculate()">
+	<script type="text/javascript">
+		setInterval(function(){ alert("Please, use me..."); }, 30000);
+		function calculate(gauche, op, droite){
+			var result = 0;
+			var gauche = parseInt(document.getElementById("left").value);
+			var op = document.getElementById("op-select").value;
+			var droite = parseInt(document.getElementById("right").value);
+			if ((op == "/" || op == "%") && droite == 0){
+					alert("It's over 9000!");
+					console.log("It's over 9000!");
+			}
+			else if (Number.isInteger(gauche) && Number.isInteger(droite) && gauche >= 0 && droite >= 0){
+				if (op == "+"){
+					result = gauche + droite;
+					console.log(result);
+					alert(result);
+				}
+				else if (op == "-"){
+					result = gauche - droite;
+					console.log(result);
+					alert(result);
+				}
+				else if (op == "*"){
+					result = gauche * droite;
+					console.log(result);
+					alert(result);
+				}
+				else if (op == "/"){
+					result = gauche / droite;
+					console.log(result);
+					alert(result);
+				}
+				else if (op == "%"){
+					result = gauche % droite;
+					console.log(result);
+					alert(result);
+				}
+			}
+			else
+				alert("Error :(");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TODO LIST</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<style type="text/css">
+			*
+			{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				color: white;
+			}
+			body
+			{
+				height: 100%;
+				background-color: black;
+			}
+			h1
+			{
+				font-size: 3rem;
+				font-weight: 50;
+				margin: 1rem 0 3rem;
+				text-align: center;
+				color: #fff;
+				font-family: 'Roboto', sans-serif;
+			}
+			.styling
+			{
+				font-weight: 800;
+				color: lime;
+			}
+			.ft_todo
+			{
+				color: white;
+    			width: 100px;
+    			height: 30px;
+    			border-radius: 25px;
+    			background: white;
+    			padding: 3px;	
+    			margin: 5px;
+			}
+			.addButton
+			{
+				height: 50px;
+				width: 50px;
+				border-radius: 25px;
+				outline: none;
+				background-color: white;
+				color: black;
+				margin:0.25px;
+				margin-left: 10px;
+			}
+			.addButton:hover
+			{
+				opacity: 0.8;
+			}
+			#container
+			{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h1><span class="styling">TODO</span>LIST</h1>
+		<div id="container">
+			<div class="ft_list" id="ft_list"></div>
+			<button class="addButton" type="button" id="new" onclick="prompt_new()">New</button>
+		</div>
+		<script type="text/javascript" src="todo.js"></script>
+	</body>
+</html>
